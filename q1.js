@@ -1,5 +1,2 @@
 "use strict";
-var num1 = 10;
-var num2 = 20;
-var result = num1 + num2;
-console.log(result);
+console.log("I am Adnan, I have started learning TypeScript");
