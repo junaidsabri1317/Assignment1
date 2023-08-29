@@ -10,4 +10,4 @@ var numH: number = 14;
 var numI: number = 16;
 var numJ: number = 18;
 var result: number = (numA+numB+numC+numD+numE+numF+numG+numH+numI+numJ);
-console.log(result);
+console.log("Total",result);

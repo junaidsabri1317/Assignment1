@@ -11,4 +11,4 @@ var numH = 14;
 var numI = 16;
 var numJ = 18;
 var result = (numA + numB + numC + numD + numE + numF + numG + numH + numI + numJ);
-console.log(result);
+console.log("Total", result);
