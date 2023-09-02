@@ -74,13 +74,61 @@ var newFactorial:number=factorial(5)
 console.log(newFactorial)
 
 
+// //Q6 - Write a program having an array of numbers 
+// //if the number is negative it should remove the negative number 
+// //from the array
+var array1:number[]= [1, 2, 3, -4, 5, 6, -7, 8,9,19,11,12,13,14];
+for (let i = 0; i < array1.length; i++)
+{
+ if (array1[i] < 0) 
+{
+  array1.splice(i,1) 
+    i--;   
+} }
+console.log(array1)
+
+
+// //Q6 - Write a program having an array of numbers 
+// //if the number is negative it should remove the negative number 
+// //from the array
+var array1:number[]= [1, 2, 3, -4, 5, 6, -7, 8,9,19,11,12,13,14];
+for (let i = 0; i < array1.length; i++)
+{
+ if (array1[i] < 0) 
+{
+  array1.splice(i,1) 
+    i--;   
+} }
+console.log(array1)
+
+//Q No.7.	Create a function that takes an array of numbers as parameter. Use a while loop
+// to calculate and return the sum of all the numbers in the array
+
+var numbersa:number[]=[2,2,2,2,2]
+function sumofAll(numbersa:number[])
+{
+    let totalSum:number=0
+    let index:number=0
+    while (index < numbersa.length)
+    {
+        totalSum =totalSum+numbersa[index];
+        index++;
+    }
+    return totalSum
+    //console.log(totalSum)
+    
+}
+var grandtotal:number=sumofAll(numbersa)
+console.log(grandtotal)
+
 
 //Q No.8.	Implement a program that takes a list of temperatures in Celsius as input 
 //from the user. Convert each temperature to Fahrenheit using the formula 
 //F = (C * 9/5) + 32 and store the converted temperatures in an array. 
 //Use a while loop to perform the conversion for each temperature.
+
+
 var tempInCels: number[] = [40, 0, -10, 15];
-var tempInFh: number[] = convertCelsToFh(tempInCels);
 
 function convertToFahrenheit(celsius: number): number 
 {
@@ -101,9 +149,12 @@ function convertCelsToFh(celsiusTemperatures: number[]): number[]
   }
   return fahrenheitTemperatures;
 }
+var tempInFh: number[] = convertCelsToFh(tempInCels);
+
 console.log("--------------------------------------------------------------------");
 console.log("Temperatures in Celsius   :",tempInCels);
 console.log("--------------------------------------------------------------------");
 console.log("Temperatures in Fahrenheit:", tempInFh);
 console.log("--------------------------------------------------------------------");
+
 
